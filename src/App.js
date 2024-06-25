@@ -1,26 +1,22 @@
+// App.js
+
 import './App.css';
-import React, {useEffect} from 'react';
-import Pokedex from 'pokedex-promise-v2';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './Navbar'; // Adjust the import path as necessary
+import MainBody from './MainBody'; // Adjust the import path as necessary
+import MediaControlCard from './CurrentMusic.tsx'; // Adjust the import path as necessary
 
-
-const P = new Pokedex();
-const limit = 1025;
-
-
-function App() {
-
-  useEffect(() => {
-    const fetchPokedex = async () => {
-      const list = await P.getPokemonsList();
-      console.log(list);
-    }
-  })
-
+const App = () => {
   return (
-    <div className="App">
-      <p></p>        
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/main" element={<MainBody />} />
+        <Route path="/music" element={<MediaControlCard />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
