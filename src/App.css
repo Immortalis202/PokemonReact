@@ -32,7 +32,42 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.image {
+  filter: brightness(0);
+  scale: 400%;
+  object-fit: contain;
+  transform: translateY(-50px);
+  z-index: 10;
+}
+
+.cont {
+    background-image: url('../Pokemon-Ruby-Sapphire-Gameplay.jpg'); 
+    background-size:contain;
+    margin-left: auto;
+    margin-right: auto; 
+     text-align: center; 
+     border-style: double;
+     border-color:rebeccapurple;
+     width: 50rem;
+     height: 30rem;
+     display: flex;
+     align-items: flex-end;
+     justify-content: center;
+     filter:blur(5px)
+}
+
+.lato{
+  display: flex;
+  margin: 8px;
+  align-items: flex-start ;
+  flex-direction: column;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
 }

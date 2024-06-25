@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // App.js
 
 import './App.css';
@@ -18,5 +19,25 @@ const App = () => {
     </div>
   );
 };
+=======
+import "./App.css";
+import React, { useEffect } from "react";
+import Pokedex from "pokedex-promise-v2";
+import PokemonList from "./PokemonList";
+
+
+
+function App() {
+	
+
+	return (
+		<div className="App">
+      <PokemonList/>
+		</div>
+	);
+}
+>>>>>>> 6ccc26b433dd7cc42e7545c486bd69e706ff9a71
 
 export default App;
+
+
