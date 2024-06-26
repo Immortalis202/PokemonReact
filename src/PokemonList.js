@@ -3,6 +3,8 @@ import { TextField, Button } from "@mui/material";
 import Autocomplete from "@mui/material/Autocomplete";
 import CircularProgress from "@mui/material/CircularProgress";
 import Pokedex from "pokedex-promise-v2";
+import "./App.css"
+
 import {
 	Table,
 	TableBody,
